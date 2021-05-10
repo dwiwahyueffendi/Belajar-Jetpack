@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Sub 2</string>
+    <string name="app_name">Movie App</string>
     <string name="title">TITLE</string>
     <string name="movie_catalogue">Architecture\nComponent</string>
     <string name="image_highlight">Image Highlight</string>

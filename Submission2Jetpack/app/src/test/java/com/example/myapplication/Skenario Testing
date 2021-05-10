@@ -1,0 +1,54 @@
+Unit Testing
+-MovieViewMode :
+    -Memastikan data Movie tidak null
+    -Memastikan jumlah data Movie sesuai dengan yang di harapkan
+-TvShowViewMode :
+    -Memastikan data TvShow tidak null
+    -Memastikan jumlah data TvShow sesuai
+-DetailViewModel :
+    -Memastikan data detail Movie tidak null
+    -Memastikan jumlah data Movie sesuai dengan yang diharapkan
+    -Memastikan data detail TvShow tidak null
+    -Memastikan jumlah data TvShow sesuai dengan yang diharapkan
+-ContentCatalogRepository
+    -Memastikan data Movie tidak null
+    -Memastikan jumlah data Movie sesuai dengan yang di harapkan
+    -Memastikan data TvShow tidak null
+    -Memastikan jumlah data TvShow sesuai
+    -Memastikan data detail Movie tidak null
+    -Memastikan jumlah data Movie sesuai dengan yang diharapkan
+    -Memastikan data detail TvShow tidak null
+    -Memastikan jumlah data TvShow sesuai dengan yang diharapkan
+
+-Instrumental Testing:
+    -HomeActivityTest
+        -loadMovie
+            -Menampilkan data Movie
+            -Memastikan rv_movie dalam keadaan tampil
+            -Gulir rv_movie ke posisi terakhir
+        -loadDetailMovie
+            -Menampilkan data Movie
+            -Memastikan rv_movie dalam keadaan tampil
+            -Gulir rv_movie ke posisi terakhir
+            -Memberikan tindakan click pada data terakhir di rv_movie
+            -Memastikan ImageView untuk backdroppath tampil sesuai dengan yang diharapkan
+            -Memastikan ImageView untuk posterpath tampil sesuai dengan yang diharapkan
+            -Memastikan TextView untuk title tampil sesuai dengan yang diharapkan
+            -Memastikan TextView untuk dateRelease tampil sesuai dengan yang diharapkan
+            -Memastikan TextView untuk vote average tampil sesuai dengan yang diharapkan
+            -Memastikan TextView untuk description tampil sesuai dengan yang diharapkan
+        -loadTvShow
+            -Menampilkan data TvShow
+            -Memastikan rv_list_tv_show dalam keadaan tampil
+            -Gulir rv_list_tv_show ke posisi terakhir
+        -loadDetailMovie
+            -Menampilkan data TvShow
+            -Memastikan rv_tvshow dalam keadaan tampil
+            -Gulir rv_tvshow ke posisi terakhir
+            -Memberikan tindakan click pada data terakhir di rv_tvshow
+            -Memastikan ImageView untuk backdroppath tampil sesuai dengan yang diharapkan
+            -Memastikan ImageView untuk posterpath tampil sesuai dengan yang diharapkan
+            -Memastikan TextView untuk title tampil sesuai dengan yang diharapkan
+            -Memastikan TextView untuk dateRelease tampil sesuai dengan yang diharapkan
+            -Memastikan TextView untuk vote average tampil sesuai dengan yang diharapkan
+            -Memastikan TextView untuk description tampil sesuai dengan yang diharapkan

@@ -11,7 +11,8 @@ import com.example.myapplication.data.local.ContentEntity
 import com.example.myapplication.databinding.ListItemBinding
 import com.example.myapplication.network.NetworkInfo.IMAGE_URL
 
-class ContentAdapter(private val callback: DataCallback) : RecyclerView.Adapter<ContentAdapter.ContentViewHolder>() {
+class ContentAdapter(private val callback: DataCallback) :
+    RecyclerView.Adapter<ContentAdapter.ContentViewHolder>() {
 
     private val listContent = ArrayList<ContentEntity>()
 
@@ -22,7 +23,8 @@ class ContentAdapter(private val callback: DataCallback) : RecyclerView.Adapter<
         notifyDataSetChanged()
     }
 
-    inner class ContentViewHolder(private val binding: ListItemBinding) : RecyclerView.ViewHolder(binding.root) {
+    inner class ContentViewHolder(private val binding: ListItemBinding) :
+        RecyclerView.ViewHolder(binding.root) {
         fun bind(data: ContentEntity) {
             with(binding) {
                 val requestOptions = RequestOptions()
@@ -31,9 +33,11 @@ class ContentAdapter(private val callback: DataCallback) : RecyclerView.Adapter<
 
                 Glide.with((itemView))
                     .load(IMAGE_URL + data.posterPath)
-                    .apply(RequestOptions()
-                        .placeholder(R.drawable.ic_account)
-                        .error(R.drawable.ic_error))
+                    .apply(
+                        RequestOptions()
+                            .placeholder(R.drawable.ic_account)
+                            .error(R.drawable.ic_error)
+                    )
                     .transition(DrawableTransitionOptions.withCrossFade())
                     .centerCrop()
                     .into(ivContent)
@@ -49,7 +53,8 @@ class ContentAdapter(private val callback: DataCallback) : RecyclerView.Adapter<
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ContentViewHolder {
-        val itemListContent = ListItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        val itemListContent =
+            ListItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return ContentViewHolder(itemListContent)
     }
 
