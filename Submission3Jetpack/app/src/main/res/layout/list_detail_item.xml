@@ -28,7 +28,7 @@
         </FrameLayout>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardView_detail"
+            android:id="@+id/cv_detail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -61,7 +61,7 @@
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="@+id/frame_backdrop"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/cardView_detail"
+            app:layout_constraintStart_toEndOf="@+id/cv_detail"
             app:layout_constraintTop_toBottomOf="@+id/frame_backdrop" />
 
         <LinearLayout
@@ -121,8 +121,8 @@
             android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/cardView_detail"
-            app:layout_constraintTop_toBottomOf="@id/cardView_detail" />
+            app:layout_constraintStart_toStartOf="@+id/cv_detail"
+            app:layout_constraintTop_toBottomOf="@id/cv_detail" />
 
         <TextView
             android:id="@+id/tv_description"

@@ -1,0 +1,107 @@
+-Instrumental Testing:
+    -HomeActivityTest
+        -test1LoadMovie
+	        -Mengklik navigation movie
+            -Menampilkan data Movie
+            -Memastikan rv_movies dalam keadaan tampil
+            -Gulir rv_movie ke posisi terakhir
+        -test2LoadDetailMovie
+	        -Mengklik navigation movie
+            -Menampilkan data Movie
+            -Memastikan rv_movies dalam keadaan tampil
+            -Memberikan tindakan click pada data pertama di rv_movies
+            -Memastikan ImageView untuk backdroppath tampil sesuai dengan yang diharapkan
+            -Memastikan ImageView untuk posterpath tampil sesuai dengan yang diharapkan
+            -Memastikan TextView untuk title tampil sesuai dengan yang diharapkan
+            -Memastikan TextView untuk vote average tampil sesuai dengan yang diharapkan
+            -Memastikan TextView untuk dateRelease tampil sesuai dengan yang diharapkan
+            -Memastikan TextView untuk description tampil sesuai dengan yang diharapkan
+	        -Mengklik button favorite
+	        -Mengklik tombol back
+        -test3LoadTvShow
+	        -Mengklik navigation TvShow
+            -Menampilkan data TvShow
+            -Memastikan rv_tv_show dalam keadaan tampil
+            -Gulir rv_tv_show ke posisi terakhir
+        -test4LoadDetailTvShow
+	        -Mengklik navigation TvShow
+            -Menampilkan data TvShow
+            -Memastikan rv_tv_show dalam keadaan tampil
+            -Memberikan tindakan click pada data pertama di rv_tv_show
+            -Memastikan ImageView untuk backdroppath tampil sesuai dengan yang diharapkan
+            -Memastikan ImageView untuk posterpath tampil sesuai dengan yang diharapkan
+            -Memastikan TextView untuk title tampil sesuai dengan yang diharapkan
+            -Memastikan TextView untuk vote average tampil sesuai dengan yang diharapkan
+            -Memastikan TextView untuk dateRelease tampil sesuai dengan yang diharapkan
+            -Memastikan TextView untuk description tampil sesuai dengan yang diharapkan
+            -Mengklik button favorite
+	        -Mengklik tombol back
+        -test5LoadFavoriteMovie
+	        -Mengklik navigation Favorite
+	        -Mengklik tabs 0 / tabs movie
+            -Menampilkan data favorite movie
+            -Memastikan rv_favorite_movies dalam keadaan tampil
+            -Gulir rv_favorite_movies ke posisi terakhir
+        -test6LoadDetailFavoriteMovie
+	        -Mengklik navigation Favorite
+	        -Mengklik tabs 0 / tabs movie
+            -Menampilkan data favorite movie
+            -Memastikan rv_favorite_movies dalam keadaan tampil
+            -Memberikan tindakan click pada data pertama di rv_favorite_movies
+            -Memastikan ImageView untuk backdroppath tampil sesuai dengan yang diharapkan
+            -Memastikan ImageView untuk posterpath tampil sesuai dengan yang diharapkan
+            -Memastikan TextView untuk title tampil sesuai dengan yang diharapkan
+            -Memastikan TextView untuk vote average tampil sesuai dengan yang diharapkan
+            -Memastikan TextView untuk dateRelease tampil sesuai dengan yang diharapkan
+            -Memastikan TextView untuk description tampil sesuai dengan yang diharapkan
+            -Mengklik button favorite
+        -test7LoadFavoriteTvShow
+	        -Mengklik navigation Favorite
+	        -Mengklik tabs 1 / tabs tvshow
+            -Menampilkan data favorite tvshow
+            -Memastikan rv_favorite_tv_show dalam keadaan tampil
+            -Gulir rv_favorite_tv_shows ke posisi terakhir
+        -test8LoadDetailFavoriteTvShow
+	        -Mengklik navigation Favorite
+	        -Mengklik tabs 1 / tabs tvshow
+            -Menampilkan data favorite tvshow
+            -Memastikan rv_favorite_tv_shows dalam keadaan tampil
+            -Memberikan tindakan click pada data pertama di rv_favorite_tv_shows
+            -Memastikan ImageView untuk backdroppath tampil sesuai dengan yang diharapkan
+            -Memastikan ImageView untuk posterpath tampil sesuai dengan yang diharapkan
+            -Memastikan TextView untuk title tampil sesuai dengan yang diharapkan
+            -Memastikan TextView untuk vote average tampil sesuai dengan yang diharapkan
+            -Memastikan TextView untuk dateRelease tampil sesuai dengan yang diharapkan
+            -Memastikan TextView untuk description tampil sesuai dengan yang diharapkan
+            -Mengklik button favorite
+
+Unit Testing
+-MovieViewModel :
+    -Memastikan data Movie tidak null
+    -Memastikan jumlah data Movie sesuai dengan yang di harapkan
+-TvShowViewMode :
+    -Memastikan data TvShow tidak null
+    -Memastikan jumlah data TvShow sesuai
+-DetailViewModel :
+    -Memastikan data detail Movie tidak null
+    -Memastikan jumlah data Movie sesuai dengan yang diharapkan
+    -Memastikan data detail TvShow tidak null
+    -Memastikan jumlah data TvShow sesuai dengan yang diharapkan
+-FavoriteViewModel :
+    -Memastikan data favorite Movie tidak null
+    -Memastikan jumlah data favorite Movie sesuai dengan yang diharapkan
+    -Memastikan data favorite TvShow tidak null
+    -Memastikan jumlah data favorite TvShow sesuai dengan yang diharapkan
+-ContentRepository
+    -Memastikan data Movie tidak null
+    -Memastikan jumlah data Movie sesuai dengan yang di harapkan
+    -Memastikan data TvShow tidak null
+    -Memastikan jumlah data TvShow sesuai
+    -Memastikan data detail Movie tidak null
+    -Memastikan jumlah data Movie sesuai dengan yang diharapkan
+    -Memastikan data detail TvShow tidak null
+    -Memastikan jumlah data TvShow sesuai dengan yang diharapkan
+    -Memastikan data favorite Movie tidak null
+    -Memastikan jumlah data favorite Movie sesuai dengan yang diharapkan
+    -Memastikan data favorite TvShow tidak null
+    -Memastikan jumlah data favorite TvShow sesuai dengan yang diharapkan

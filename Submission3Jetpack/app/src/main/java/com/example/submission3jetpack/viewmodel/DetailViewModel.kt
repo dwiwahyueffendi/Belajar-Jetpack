@@ -13,14 +13,6 @@ class DetailViewModel(private val mContentRepository: ContentRepository): ViewMo
     val movieId = MutableLiveData<String>()
     val tvShowId = MutableLiveData<String>()
 
-    var detailMovie: LiveData<Resource<MovieEntity>> = Transformations.switchMap(movieId) { mMovieId ->
-        mContentRepository.getDetailMovie(mMovieId)
-    }
-
-    var detailTvShow: LiveData<Resource<TvShowEntity>> = Transformations.switchMap(tvShowId) { mTvShowId ->
-        mContentRepository.getDetailTvShow(mTvShowId)
-    }
-
     fun setSelectMovie(movieId: String) {
         this.movieId.value = movieId
     }
@@ -43,5 +35,13 @@ class DetailViewModel(private val mContentRepository: ContentRepository): ViewMo
             val newState = !tvShowResource.data.isFavorite
             mContentRepository.setFavoriteTvShow(tvShowResource.data, newState)
         }
+    }
+
+    var detailMovie: LiveData<Resource<MovieEntity>> = Transformations.switchMap(movieId) { mMovieId ->
+        mContentRepository.getDetailMovie(mMovieId)
+    }
+
+    var detailTvShow: LiveData<Resource<TvShowEntity>> = Transformations.switchMap(tvShowId) { mTvShowId ->
+        mContentRepository.getDetailTvShow(mTvShowId)
     }
 }
